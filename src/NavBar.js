@@ -213,10 +213,12 @@ export default function NavBar() {
             </div>
           </li>
 
-          <li>
+          <li className="shopingcartl">
+          <Link to="/ProductDetailss">
             <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight">
             <i class="fas fa-cart-plus navlogo1"></i>
             </button>
+            </Link>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <h3 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h3>

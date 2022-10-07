@@ -55,10 +55,11 @@ export default function Emaillogin(e){
     axios.post("https://api.gyros.farm/api/AdminApi/LoginWithEmail",{
       Email : Email,
       PassWord : PassWord
-    }).then(result=>{
+    }).then(result=>{ 
        console.log("login")
-      let token = result.data.token
        console.log("assam",result) 
+      let token = result.data.token
+       
       if(token !== undefined || token !== "" || token !== null){
          console.log("hello world")
         Alert.success("Login successfully !!")
